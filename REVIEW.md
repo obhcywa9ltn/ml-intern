@@ -60,12 +60,12 @@ P0-class concern, before writing it up:
 - Confirm the specific behavior you're claiming. "This breaks X" must be
   grounded in either the code handling X or a test exercising X, not in
 
-## Personal notes (fork-only)
+## Personal notes (fork-specific)
 
-<!-- These notes are for my own learning and don't apply to upstream reviews. -->
+<!-- These notes are for my own learning/reference and don't apply upstream. -->
 
-- When studying a PR, try to reproduce the failure locally before accepting any
-  explanation at face value. Running the relevant test suite takes a few minutes
-  and has caught misunderstandings more than once.
-- P0 findings are a good study opportunity — keep a personal log of root causes
-  to spot recurring patterns across different PRs.
+- I'm using this fork primarily to study how the review pipeline handles ML
+  training scripts. Pay extra attention to P0 findings in data-loading and
+  preprocessing code — that's the area I'm most focused on.
+- When reviewing my own experimental branches, P1 findings on code style are
+  fine to skip; I care more about correctness and numerical stability issues.
